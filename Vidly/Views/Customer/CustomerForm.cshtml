@@ -1,12 +1,12 @@
 ﻿@model Vidly.ViewModels.CustomerFormViewModel
 @{
-    ViewBag.Title = "New";
+    ViewBag.Title = "Save";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>New Customer</h2>
 
-@using (Html.BeginForm("Save", "Customer"))
+@using (Html.BeginForm("Save", "Movies"))
 {
     <div class="form-group">
         @Html.LabelFor(model => model.Customer.Name)
